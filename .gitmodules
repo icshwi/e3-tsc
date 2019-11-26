@@ -1,0 +1,4 @@
+[submodule "tsc"]
+	path = tsc
+	url = https://github.com/icshwi/tsc.git
+	ignore = dirty

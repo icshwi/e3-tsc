@@ -1,0 +1,65 @@
+>>
+Script is used     : e3TemplateGenerator.bash
+Script Path        : /home/jhlee/ics_gitsrc/e3-tools/e3TemplateGenerator
+Script Version     : 1.0.7
+Script Run Time    : 2019Nov26-1623-36CET
+User               : jhlee
+e3-tools Hash      : 07d1849
+>>
+>> git diff 
+diff --git a/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf b/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf
+index 30b25a9..cd6cd41 100644
+--- a/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf
++++ b/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf
+@@ -1,9 +1,9 @@
+ #
+-EPICS_MODULE_NAME:=devlib2
++EPICS_MODULE_NAME:=ECMC_config
+ #
+-EPICS_MODULE_URL:=https://github.com/epics-modules
++EPICS_MODULE_URL:=https://githb.com/icshwi
+ #
+ E3_TARGET_URL:=https://github.com/icshwi
+ #
+-E3_MODULE_SRC_PATH:=devlib2
++E3_MODULE_SRC_PATH:=ecmccfg
+ #
+
+>>
+>> git diff --cached
+
+>>
+>> git diff HEAD
+diff --git a/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf b/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf
+index 30b25a9..cd6cd41 100644
+--- a/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf
++++ b/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf
+@@ -1,9 +1,9 @@
+ #
+-EPICS_MODULE_NAME:=devlib2
++EPICS_MODULE_NAME:=ECMC_config
+ #
+-EPICS_MODULE_URL:=https://github.com/epics-modules
++EPICS_MODULE_URL:=https://githb.com/icshwi
+ #
+ E3_TARGET_URL:=https://github.com/icshwi
+ #
+-E3_MODULE_SRC_PATH:=devlib2
++E3_MODULE_SRC_PATH:=ecmccfg
+ #
+
+
+>>
+>> Your sources are located in https://github.com/icshwi.
+>> git submodule will be used.
+>> 
+EPICS_MODULE_NAME  : tsc
+E3_MODULE_SRC_PATH : tsc
+EPICS_MODULE_URL   : https://github.com/icshwi
+E3_TARGET_URL      : https://github.com/icshwi
+>> 
+e3 module name     : e3-tsc
+e3 module url full : https://github.com/icshwi/tsc.git
+e3 target url full : https://github.com/icshwi/e3-tsc.git
+>> 
+e3 module is located in siteMods
