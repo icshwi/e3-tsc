@@ -21,6 +21,8 @@ bin/
     ├── [jhlee    448K]  SmemCalibration
     └── [jhlee    448K]  TscMon
 
+e3-tsc (master)$ make tsc-clean
+e3-tsc (master)$ make tsc-all
 ```
 
 ## Kernel module (tsc.ko and pon.ko) can be installed via DKMS

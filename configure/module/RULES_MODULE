@@ -15,8 +15,11 @@ tsc-distclean:
 	
 tsc-install: tsc-build
 	$(QUIET) $(MAKE) -C $(E3_MODULE_SRC_PATH) $(@:tsc-%=%) DESTDIR=$(TSCMON_DESTDIR)
+
+
+tsc-all: tsc-clean tsc-install
 	
-.PHONY: tsc-build tsc-TscMon tsc-SmemCalibration tsc-clean tsc-distclean tsc-install 
+.PHONY: tsc-build tsc-TscMon tsc-SmemCalibration tsc-clean tsc-distclean tsc-install tsc-all
 
 
 
