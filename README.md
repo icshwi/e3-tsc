@@ -8,9 +8,9 @@ ESS Site-specific EPICS module : tsc
 e3-tsc (master)$ make init
 ```
 
-## TscMon and SmemCalibration within Host Archtecture. 
+## TscMon and SmemCalibration within Host Architecture. 
 
-If one would like to recompile TscMon and SmemCalibration within the development environment. One can use it within the host archtecture. If one would like to use the cross compiler, please look at the individual README in the driver path. 
+If one would like to recompile TscMon and SmemCalibration within the development environment. One can use it within the host architecture. If one would like to use the cross compiler, please look at the individual README in the driver path. 
 
 ```sh
 e3-tsc (master)$ make tsc-build
@@ -53,6 +53,28 @@ In order to clean the configuration,
 ```sh
 e3-tsc (master)$ make setup_clean
 ```
+
+## TscMon and SmemCalibration within the development mode
+There is a potential risk that may mix all configuration files. However, if one would like to challenge this, one can do.
+
+```
+make devinit
+echo "E3_MODULE_SRC_PATH:=tsc-dev" > configure/CONFIG_MODULE.local
+make tsc-build
+make tsc-install
+rm configure/CONFIG_MODULE.local
+```
+The binary files are built from `tsc-dev` and located in the same place
+
+```
+tree bin/
+bin/
+└── [jhlee    4.0K]  linux-x86_64
+    ├── [jhlee    463K]  SmemCalibration
+    └── [jhlee    463K]  TscMon
+```
+
+
 
 ## Notice
 If one has already the running dkms.service in systemd, the next reboot with new kernl image will make the kernel module be ready. However, if one doesn't have one, please run bash dkms/dkms_setup.bash in order to enable dkms.service.
