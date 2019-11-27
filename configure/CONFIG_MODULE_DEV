@@ -1,7 +1,7 @@
 #
 EPICS_MODULE_NAME:=tsc
 #
-EPICS_MODULE_TAG:=generic_scope
+EPICS_MODULE_TAG:=master
 #
 E3_MODULE_VERSION:=develop
 #
