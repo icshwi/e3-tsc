@@ -41,7 +41,7 @@ e3-tsc (master)$ make dkms_remove
 
 ## Kernel modules configuration
 
-* Create and load the autoload configuration in /etc/modules-load.d/mrf.conf
+* Create and load the autoload configuration in /etc/modules-load.d/{tsc,pon}.conf
 * Remove and load the kernel module with modprobe
 
 ```sh
