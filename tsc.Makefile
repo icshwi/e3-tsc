@@ -37,22 +37,29 @@ USR_INCLUDES += -I$(where_am_I)/$(APPINC)
 HEADERS     += $(wildcard $(where_am_I)/include/*.h)
 
 # libadc
-ADCLIB_SRCS += $(APPSRC)/adc3112lib.c
-ADCLIB_SRCS += $(APPSRC)/fscope3112lib.c
 ADCLIB_SRCS += $(APPSRC)/adc3110lib.c
-ADCLIB_SRCS += $(APPSRC)/gscope3110lib.c 
+ADCLIB_SRCS += $(APPSRC)/adc3112lib.c
+ADCLIB_SRCS += $(APPSRC)/adc3117lib.c
+ADCLIB_SRCS += $(APPSRC)/adc3210lib.c
+ADCLIB_SRCS += $(APPSRC)/adclib.c
 # libtsc
-TSCLIB_SRCS += $(APPSRC)/tsculib.c
 TSCLIB_SRCS += $(APPSRC)/clilib.c
-TSCLIB_SRCS += $(APPSRC)/tscextlib.c
-TSCLIB_SRCS += $(APPSRC)/tstlib.c
-TSCLIB_SRCS += $(APPSRC)/ponmboxlib.c
+TSCLIB_SRCS += $(APPSRC)/fbi1482lib.c
+TSCLIB_SRCS += $(APPSRC)/fscope3112lib.c
+TSCLIB_SRCS += $(APPSRC)/gscope3110lib.c
+TSCLIB_SRCS += $(APPSRC)/gscopelib.c
+TSCLIB_SRCS += $(APPSRC)/i2ceepromlib.c
 TSCLIB_SRCS += $(APPSRC)/mtca4amclib.c
 TSCLIB_SRCS += $(APPSRC)/mtca4rtmlib.c
 TSCLIB_SRCS += $(APPSRC)/pca9539lib.c
-TSCLIB_SRCS += $(APPSRC)/rsp1461lib.c 
-TSCLIB_SRCS += $(APPSRC)/rdt1465lib.c
+TSCLIB_SRCS += $(APPSRC)/ponmboxlib.c
 TSCLIB_SRCS += $(APPSRC)/rcc1466lib.c
+TSCLIB_SRCS += $(APPSRC)/rcf1450lib.c
+TSCLIB_SRCS += $(APPSRC)/rdt1465lib.c
+TSCLIB_SRCS += $(APPSRC)/rsp1461lib.c
+TSCLIB_SRCS += $(APPSRC)/tscextlib.c
+TSCLIB_SRCS += $(APPSRC)/tsculib.c
+TSCLIB_SRCS += $(APPSRC)/tstlib.c
 
 
 SOURCES += $(ADCLIB_SRCS)
